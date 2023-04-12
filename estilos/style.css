@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+
+:root{
+    --font1: Verdana, geneva, Tahoma, sans-serif;
+    --font2: 'Roboto Mono', monospace;
+    --font3: 'Nova Mono', monospace;
+}
+
+html, body{
+    min-height: 100vh;
+    background: #a9a9a9;
+    font-family: var(--font1);
+}
+
+#cabecalho{
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+#titulo-principal{
+    padding: 50px 0 0 0;
+    font-family: var(--font2);
+    font-size: 10vw;
+    font-variant: small-caps;
+}
+
+#cabecalho > p{
+    padding: 0 0 50px 0;
+}
+
+#cabecalho a, #rodape a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#cabecalho a:hover, #rodape a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding: 10vh 5vw;
+    line-height: 2em;
+    font-family: var(--font3);
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+section > p{
+    padding: 0 0 2em 0;
+}
+
+.normal{
+    background-color: white;
+    color: black;
+}
+
+.imagem{
+    background-color: black;
+    color: white;
+    box-shadow: inset 2px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.imagem > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2.5% 5% 2.5% 1%;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.joaninha{
+    background: black url('../imagens/background001.jpg') center no-repeat fixed;
+    background-size: cover;
+}
+
+.papel{
+    background: black url('../imagens/background002.jpg') center no-repeat fixed;
+    background-size: cover;
+}
+
+#rodape{
+    background: black;
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+    padding: 10px;
+}
